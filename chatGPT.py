@@ -34,7 +34,7 @@ def TTS(response):
         os.remove(filename)
 def main():
     st.set_page_config(
-        page_title = "음성 비서 프로그램", layout = "wide"
+        page_title = "음성 비서 프로그램", layout = "wide")
         if "chat" not in st.session_state:
             st.session_state["chat"] = []
             
