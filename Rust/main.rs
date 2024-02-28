@@ -1,14 +1,16 @@
-use std::io;
-
 fn main(){
-    println!("guess the number!");
+    // addtion
+    let sum  = 5 + 10;
 
-    println!("Please input your guess.");
+    // subtraction
+    let difference = 95.5 - 4.3;
 
-    let mut guess = String::new();
+    // multiplication
+    let product = 4 * 30;
 
-    io::stdin().read_line(&mut guess)
-        .expect("Failed to read line");
+    // division
+    let quotient = 56.7 / 32.2;
 
-    println!("you guessed: {}", guess);
+    //remainder
+    let = remainder = 43 % 5;
 }
