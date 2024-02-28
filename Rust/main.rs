@@ -1,9 +1,14 @@
+use std::io;
+
 fn main(){
-    let condition = true;
-    let number = if condition{
-        5
-    } else{
-        6
-    };
-    println!("the value of number is: {}", number);
-} // end of main
+    println!("guess the number!");
+
+    println!("Please input your guess.");
+
+    let mut guess = String::new();
+
+    io::stdin().read_line(&mut guess)
+        .expect("Failed to read line");
+
+    println!("you guessed: {}", guess);
+}
